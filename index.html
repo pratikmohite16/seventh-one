@@ -4,44 +4,43 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Seventh</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <main class="card">
-    <div class="badge">For you ❤️</div>
+  <div class="bg"></div>
 
-    <h1 id="title">Hey.</h1>
-    <p class="subtitle">I made this page because some things deserve their own place.</p>
+  <main class="container">
+    <section class="glass">
+      <span class="eyebrow">For you</span>
 
-    <section class="note">
-      <p>
-        I don’t know the perfect way to say this, so I’ll say it simply:
-        <strong>I love you.</strong>
+      <h1>
+        I didn’t want to say this<br/>
+        <span>anywhere else.</span>
+      </h1>
+
+      <p class="lead">
+        So I built this place instead.
       </p>
-      <p>
-        Not just in the “good days” way—also in the “messy days”, “quiet days”,
-        “I’m tired but still thinking of you” way.
+
+      <p class="body">
+        I love you — quietly, deeply, and without conditions.
+        In the way that stays.
       </p>
-      <p>
-        You feel like home to me. And I want to keep choosing you—again and again.
+
+      <p class="body">
+        You feel like home to me.
       </p>
-      <p class="sign">
-        — <span id="from">Pratik</span>
-      </p>
+
+      <div class="signature">
+        — Pratik
+      </div>
     </section>
-
-    <div class="actions">
-      <button class="btn" id="btnMemory">Tap for a little memory</button>
-      <button class="btn ghost" id="btnPromise">Tap for a promise</button>
-    </div>
-
-    <p class="small" id="line">
-      Built with love on <span id="date"></span>.
-    </p>
   </main>
-
-  <div class="toast" id="toast" aria-live="polite"></div>
-
-  <script src="script.js"></script>
 </body>
 </html>
