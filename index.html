@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,40 +8,79 @@
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <div class="bg"></div>
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-overlay"></div>
 
-  <main class="container">
-    <section class="glass">
-      <span class="eyebrow">For you</span>
+  <main>
+    <!-- Section 1: Intro -->
+    <section class="slide">
+      <div class="content">
+        <span class="eyebrow fade-in">For you</span>
+        <h1 class="hero-text hidden">
+          <span class="typewriter" data-text="I didn’t want to say this"></span><br />
+          <span class="typewriter highlight" data-text="anywhere else."></span>
+        </h1>
+        <p class="scroll-hint fade-in-delay">Scroll to read</p>
+      </div>
+    </section>
 
-      <h1>
-        I didn’t want to say this<br/>
-        <span>anywhere else.</span>
-      </h1>
+    <!-- Section 2: Reasoning -->
+    <section class="slide">
+      <div class="content">
+        <p class="big-text fade-in">
+          So I built this universe<br>just for us.
+        </p>
+      </div>
+    </section>
 
-      <p class="lead">
-        So I built this place instead.
-      </p>
+    <!-- Section 3: The Declaration -->
+    <section class="slide">
+      <div class="content">
+        <p class="body-text fade-in">
+          I love you — quietly, deeply, and without conditions.<br>
+          In the way that stars burn: silent but constant.
+        </p>
+      </div>
+    </section>
 
-      <p class="body">
-        I love you — quietly, deeply, and without conditions.
-        In the way that stays.
-      </p>
+    <!-- Section 4: The Feeling -->
+    <section class="slide">
+      <div class="content">
+        <p class="big-text fade-in">
+          You feel like <span class="highlight-text">home</span> to me.
+        </p>
+      </div>
+    </section>
 
-      <p class="body">
-        You feel like home to me.
-      </p>
+    <!-- Section 5: New Content/Promise -->
+    <section class="slide">
+      <div class="content">
+        <p class="body-text fade-in">
+          No matter how far we drift,<br>
+          gravity will always pull me back to you.
+        </p>
+      </div>
+    </section>
 
-      <div class="signature">
-        — Pratik
+    <!-- Section 6: Signature -->
+    <section class="slide">
+      <div class="content">
+        <div class="signature fade-in">
+          — Pratik
+        </div>
       </div>
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
